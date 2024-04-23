@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: gym;
+  src: url(./Basketball.otf);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: rgb(63, 63, 63);
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(42, 42, 42, 0.663);
+  border: 2px solid orange;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  margin-left: 50px;
+  font-family: gym;
+  color: orange;
+  font-size: 20px;
+}
+.right h1 {
+  font-family: gym;
+  color: orange;
+  font-size: 50px;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+#home {
+  background-image: url(./pictures/gym.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+.home {
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 150px;
+}
+
+.prof {
+  background-image: url(./pictures/1.jpg);
+  background-size: contain;
+  padding: 150px;
+  border-radius: 20px;
+  border: 2px solid orange;
+  box-shadow: 5px 5px 5px black;
+}
+.name {
+  font-family: gym;
+  font-size: 40px;
+  color: orange;
+  text-shadow: 5px 5px 5px black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#about {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#about p {
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 600;
+  color: white;
+}
+#about p span {
+  font-family: gym;
+  color: orange;
+  font-size: 30px;
+}
+#about h1 {
+  text-align: center;
+  font-family: gym;
+  color: orange;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+#about ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 25px;
+}
+
+#pict {
+  background-image: url();
+}
+#pict h1 {
+  text-align: center;
+  font-family: gym;
+  color: orange;
+  font-size: 50px;
+}
+#pict p {
+  text-align: center;
+  font-family: gym;
+  color: orange;
+  margin-bottom: 50px;
+}
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.gallery img {
+  height: 200px;
+  width: 200px;
+  border: 2px solid orange;
+  border-radius: 20px;
+  transition: transform 0.7s;
+  object-fit: cover;
+}
+.gallery img:hover {
+  height: 320px;
+  width: 320px;
+  transform: scale(1.5);
+}
+
+#cont {
+  padding-top: 20px;
+}
+#cont h1,
+#cont p {
+  text-align: center;
+  font-family: gym;
+  color: orange;
+}
+
+#cont h1 {
+  text-align: center;
+  font-family: gym;
+  color: orange;
+  font-size: 50px;
+}
+
+.containers {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 20px;
+}
+.containers a {
+  font-family: gym;
+  font-size: 50px;
+  text-decoration: none;
+  color: orange;
+}
+.containers .cont1,
+.cont2 {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+@media all and (max-width: 600px) {
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+  }
+  nav {
+    flex-direction: column-reverse;
+  }
+  li a {
+    color: orange;
+    font-size: 15px;
+    margin-left: 30px;
+  }
+  .right h1 {
+    font-size: 20px;
+  }
+  #home {
+    background-position: left 70% bottom 10%;
+  }
+  .home {
+    padding-top: 50px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .prof {
+    background-image: url(./pictures/1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px;
+    width: 20px;
+  }
+  .name {
+    font-family: gym;
+    font-size: 30px;
+    text-align: center;
+  }
+  #about {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  #about p {
+    font-size: 20px;
+  }
+  #pict {
+  background-image: url();
+}
+.gallery img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery img:hover {
+  height: 200px;
+  width: 200px;
+}
+.containers {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 50px;
+}
+.containers a {
+  font-family: gym;
+  font-size: 30px;
+  text-decoration: none;
+  color: orange;
+}
+.containers .cont1,
+.cont2 {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+}
